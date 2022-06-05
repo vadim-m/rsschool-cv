@@ -1,1 +1,1 @@
-# Init README.md
+https://vadim-m.github.io/rsschool-cv/cv

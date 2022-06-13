@@ -23,8 +23,6 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
 li,
 figure,
 figcaption,
@@ -166,7 +164,7 @@ section {
 }
 
 .list {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .list__item {
@@ -193,4 +191,20 @@ pre {
 .icons {
   display: flex;
   justify-content: space-between;
+}
+
+footer {
+  padding: 20px;
+  background-color: #42454a;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__img {
+  height: 40px;
 }

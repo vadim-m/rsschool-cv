@@ -76,7 +76,7 @@ picture {
 body {
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #333;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -94,7 +94,6 @@ body {
 
 .content {
   flex-grow: 1;
-  background-color: #e6e6fa;
 }
 
 .header {
@@ -136,4 +135,62 @@ body {
 .header__prof {
   text-transform: none;
   font-size: 34px;
+}
+
+.content {
+  display: flex;
+}
+
+.left-side {
+  width: 35%;
+  background-color: #ebecec;
+  padding: 70px 40px 30px;
+}
+
+.right-side {
+  width: 65%;
+  padding: 70px 40px 30px;
+
+  border-right: 8px solid #42454a;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 30px;
+  color: #43454b;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.list {
+  margin-bottom: 10px;
+}
+
+.list__item {
+  list-style: square;
+  margin-bottom: 12px;
+}
+
+a {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.skills-subtitle {
+  margin-bottom: 16px;
+}
+
+pre {
+  background-color: #42454a;
+  padding: 10px;
+  color: lightgreen;
+  border-radius: 8px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
 }

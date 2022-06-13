@@ -1,4 +1,210 @@
+/* box-sizing */
 html {
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+/* они уже наследуют свойство box-sizing у html (для сторонних компонентов важно!) */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* плавная прокрутка по странице, работает не везде! */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* html5 семантические теги  */
+nav,
+menu,
+header,
+footer,
+aside,
+article,
+section,
+aside,
+figure,
+figcaption {
+  display: block;
+}
+
+/* ссылки убираются почти всег */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* теги форм наследуют свойства шрифта*/
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+/* адаптив дял картинок, чтобы не вылезали за родителя  */
+img {
+  display: block;
+}
+
+img,
+picture {
+  max-width: 100%;
+}
+
+/* body */
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  color: #333;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* блок-обертка */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  max-height: 470px;
+}
+
+.header__logo {
+  width: 35%;
+}
+
+.header__photo {
+  object-fit: cover;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  padding: 48px;
+  background-color: #42454a;
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 8px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.header__person {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.header__person span {
+  font-weight: 800;
+}
+
+.header__prof {
+  text-transform: none;
+  font-size: 34px;
+}
+
+.content {
+  display: flex;
+}
+
+.left-side {
+  width: 35%;
+  background-color: #ebecec;
+  padding: 70px 40px 30px;
+}
+
+.right-side {
+  width: 65%;
+  padding: 70px 40px 30px;
+
+  border-right: 8px solid #42454a;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 30px;
+  color: #43454b;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.list {
+  margin-bottom: 20px;
+}
+
+.list__item {
+  list-style: square;
+  margin-bottom: 12px;
+}
+
+a {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.skills-subtitle {
+  margin-bottom: 16px;
+}
+
+pre {
+  background-color: #42454a;
+  padding: 10px;
+  color: lightgreen;
+  border-radius: 8px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  padding: 20px;
+  background-color: #42454a;
   font-size: 20px;
-  font-family: sans-serif;
+  font-weight: bold;
+  color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__img {
+  height: 40px;
 }
